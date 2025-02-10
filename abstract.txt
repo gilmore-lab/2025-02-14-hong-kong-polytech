@@ -1,0 +1,27 @@
+The past and future of science is open
+
+Scientific ideals, methods, and mores have developed substantially over the 
+past century, and these have contributed to unprecedented advances in knowledge 
+and understanding across an astonishing array of fields. In this talk, I will
+argue that openness, as an attitude and a set of specific practices, has been 
+critical for these successes and will continue to be so in the future. In so 
+doing, I will share some personal experiences on the open science frontier drawn
+from my work co-founding Databrary, editing manuscripts for Nature Scientific Data, 
+publishing research openly, and teaching courses and workshops on open scholarship.
+
+Bio
+
+Rick Gilmore is Professor of Psychology at The Pennsylvania State University, 
+Director of the Open Data and Developmental Science (ODDS) initiative with the 
+Penn State Child Study Center (CSC). With Karen Adolph, he co-founded and 
+co-directs the Databrary.org data repository, and he serves as Co-PI on the 
+Play & Learning Across a Year (PLAY) Project. Gilmore served as inaugural 
+director of the Penn State Social, Life, & Engineering Sciences Imaging Center. 
+His research examines the development of perception and action in infants, 
+children, and adults using behavioral, neural, and computational methods. Gilmore
+received his bachelor's degree magna cum laude in Cognitive Science from Brown 
+University and his master's and doctoral degrees in Psychology from Carnegie 
+Mellon University.
+Gilmore's work has been funded by the U.S. National Science Foundation, 
+National Institutes of Health, the John S. Templeton Foundation, the Alfred P. Sloan Foundation,
+and the James S. McDonnell Foundation.

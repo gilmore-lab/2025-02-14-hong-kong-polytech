@@ -1,0 +1,67 @@
+---
+title: "The past and future of science is open"
+author: "Rick O. Gilmore"
+format: 
+  revealjs:
+    theme: default
+    footer: "Hong Kong Polytechnic 2024-02-14"
+    citations-hover: true
+    footnotes-hover: true
+    link-external-icon: true
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    background-transition: concave
+    fig-align: center
+    multiplex: true
+bibliography: 'include/bib/hk-polytech.bib'
+bibliographystyle: apa
+---
+
+# Motivations
+
+---
+
+{{< video https://www.youtube.com/watch?v=66oNv_DJuPc width=100% height=70% >}}
+
+@NYU_Health_Sciences_Library2013-gp
+
+# Challenges
+
+## Busy-ness
+
+![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
+
+## @Fitts1954-we Law 
+
+- Speed/accuracy trade-off
+
+![@Manohar2015-sn Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg)
+---
+
+![](https://kk.org/thetechnium/files/2024/01/AITradeoff.jpg){fig-align="center"}
+
+---
+
+![@Kahneman2013-zi](https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&ssl=1)
+
+## Cowardice
+
+:::: {.columns}
+::: {.column width=50%}
+>Courage is resistance to fear, *mastery* of fear—not *absence* of fear.
+
+@Twain1997-hz
+:::
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/330px-Mark_Twain_by_AF_Bradley.jpg)
+:::
+::::
+
+
+# Resources
+
+## Code
+
+- This talk was written in [R Markdown](https://rmarkdown.rstudio.com) and rendered using [Quarto](https://quarto.org) to HTML slides using the [reveal.js framework](https://revealjs.com).
+- The talk repo is here: [github.com/gilmore-lab/2025-02-14-hong-kong-polytech](https://github.com/gilmore-lab/2025-02-14-hong-kong-polytech).
