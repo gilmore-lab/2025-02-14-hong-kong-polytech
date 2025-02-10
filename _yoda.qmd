@@ -1,0 +1,10 @@
+## Yoda
+
+:::: {.columns}
+::: {.column width=60%}
+>Do or do not. There is no try.
+:::
+::: {.column width=40%}
+![<https://static.wikia.nocookie.net/starwars/images/d/d6/Yoda_SWSB.png/revision/latest?cb=20150206140125>](include/img/Yoda_SWSB.webp)
+:::
+::::

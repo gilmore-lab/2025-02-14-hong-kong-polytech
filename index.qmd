@@ -26,6 +26,116 @@ bibliographystyle: apa
 
 @NYU_Health_Sciences_Library2013-gp
 
+# Reflections
+
+## Why is this so funny?
+
+## Why is it *not* so funny?
+
+## @Begley2012-cr
+
+::: {.incremental}
+- "...Scientists in the haematology and oncology department at the biotechnology firm Amgen...tried to confirm published findings...[from] fifty-three...'landmark' studies..."
+- "...findings were confirmed in only 6 (11%) cases."
+- Even knowing the limitations of preclinical research, this was a shocking result.
+- "Raise standards for clinical research"
+:::
+
+## @Errington2021-dp
+
+>We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers...However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers.
+
+## @Errington2021-dp
+
+::: {.incremental}
+- "...data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original
+papers, we were unable to obtain these data for 68% of the experiments." 
+- "None of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments." **Fifty percent of authors** were minimally or not at all helpful."
+:::
+
+## @Errington2021-dp
+
+- "67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented."
+
+::: {.incremental}
+- This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible."
+:::
+
+---
+
+![% of U.S. adults who said science has had a(n) ___ effect on society](https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-01.png){#fig-sci-positive-effect}
+---
+
+![% of U.S. adults who say...](https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-04.png){#fig-sci-worthwhile-for-society}
+<https://www.pewresearch.org/science/2023/11/14/americans-trust-in-scientists-positive-views-of-science-continue-to-decline/>
+
+
+## What does it convey?
+
+::: {.incremental}
+- We can do better
+- Much, much better
+- So, let's do that
+:::
+
+# A better approach
+
+## Openness
+
+- Share data, code, materials, & protocols
+  - Openly (no prior approval or mandated collaboration)
+  - With explicit permission, formal data use agreements
+- Publish replications and null findings
+- Re-use and cite what others have shared
+
+## @Nosek2012-fm
+
+:::: {.columns}
+::: {.column width=50%}
+>When incentives favor novelty over replication, false results persist in the literature unchallenged, reducing efficiency in knowledge accumulation...
+:::
+::: {.column width=50%}
+![](include/img/nosek-spies.avif)
+
+:::
+::::
+
+
+## @Nosek2012-fm
+
+:::: {.columns}
+::: {.column width=50%}
+>The persistence of false findings can be meliorated with strategies that make the fundamental but abstract accuracy motive--**getting it right**--competitive with the more tangible and concrete incentive—getting it published.
+:::
+::: {.column width=50%}
+![](include/img/nosek-spies.avif)
+:::
+::::
+
+---
+
+{{< include _feynmann.qmd >}}
+
+---
+
+## Scientific norms
+
+
+
+# A personal perspective
+
+## Optic flow
+
+## Symmetry
+
+## Sex differences
+
+## PLAY
+
+## Databrary
+
+---
+
 # Challenges
 
 ## Busy-ness
@@ -34,7 +144,7 @@ bibliographystyle: apa
 
 ## @Fitts1954-we Law 
 
-- Speed/accuracy trade-off
+- *Very* hard to be fast AND accurate
 
 ![@Manohar2015-sn Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg)
 ---
@@ -45,23 +155,102 @@ bibliographystyle: apa
 
 ![@Kahneman2013-zi](https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&ssl=1)
 
-## Cowardice
+## @Twain1997-hz
 
 :::: {.columns}
-::: {.column width=50%}
+::: {.column width=60%}
 >Courage is resistance to fear, *mastery* of fear—not *absence* of fear.
-
-@Twain1997-hz
 :::
-::: {.column width=50%}
+::: {.column width=40%}
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/330px-Mark_Twain_by_AF_Bradley.jpg)
 :::
 ::::
 
+{{< include _toothbrush-culture-mishel.qmd >}}
+
+# Summing up
+
+---
+
+![](https://miro.medium.com/v2/resize:fit:640/1*Nv4oqbfv5IwRSMdLGtFZuA.gif){fig-align="center"}
+
+---
+
+![Three Little Pigs](https://www.carloscamara.es/en/blog/2019/09/05/the-three-little-pigs-is-a-fairy-tale/featured.jpg){fig-align="center"}
+
+---
+
+![Pantheon](https://theromanguy.com/wp-content/uploads/pantheon-feature-real-900x420.jpeg){fig-align="center"}
+
+---
+
+![https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
+
+---
+
+![](include/img/nobody-cares-work-harder.png){fig-align="center"}
+
+## Jerry Gilmore 1940-2023
+
+:::: {.columns}
+::: {.column width=60%}
+>If it was fun, they wouldn't have to pay you to do it.
+:::
+::: {.column width=40%}
+![](include/img/gilmore-jerry.png)
+:::
+::::
+
+## @Feynman1974-ld
+
+:::: {.columns}
+::: {.column width=60%}
+>...So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity. May you have that freedom.
+:::
+::: {.column width=40%}
+![](https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg)
+:::
+::::
+
+---
+
+{{< include _yoda.qmd >}}
+
+## Annie Easley
+
+:::: {.columns}
+::: {.column width=60%}
+>...People have their biases and prejudices, yes, I am aware. My head is not in the sand. But my thing is, if I can’t work with you, I will work around you.
+:::
+::: {.column width=40%}
+![@McClain2025-cf](include/img/annie-easley-nyt.jpg)
+:::
+::::
+
+---
+
+![https://www.aarp.org/politics-society/history/info-2018/rosie-riveter-dies-fd.html](https://cdn.aarp.net/content/aarpe/en/home/politics-society/history/info-2018/rosie-riveter-dies-fd/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.75.1440.jpeg/content/dam/aarp/politics/events-and-history/2017/04/1140-naomi-parker-fraley-rosie-the-riveter.jpg)
+
+
+
+## The past and future of science is open
+
+<p style="text-align:center;">
+*The present is what we make it...*</br>
+</br></br></br>
+**Rick Gilmore**</br>
+rog1 AT-SYMBOL psu PERIOD edu</br>
+114 Moore</br>
+[github.com/gilmore-lab](https://github.com/gilmore-lab)</br>
+[github.com/psu-psychology](https://github.com/psu-psychology)</br>
+[github.com/penn-state-open-science](https://github.com/penn-state-open-science)
+</p>
 
 # Resources
 
 ## Code
 
-- This talk was written in [R Markdown](https://rmarkdown.rstudio.com) and rendered using [Quarto](https://quarto.org) to HTML slides using the [reveal.js framework](https://revealjs.com).
-- The talk repo is here: [github.com/gilmore-lab/2025-02-14-hong-kong-polytech](https://github.com/gilmore-lab/2025-02-14-hong-kong-polytech).
+This talk was written in [R Markdown](https://rmarkdown.rstudio.com) and rendered using [Quarto](https://quarto.org) to HTML slides using the [reveal.js framework](https://revealjs.com).
+The talk repo is here: [github.com/gilmore-lab/2025-02-14-hong-kong-polytech](https://github.com/gilmore-lab/2025-02-14-hong-kong-polytech).
+
+## References
