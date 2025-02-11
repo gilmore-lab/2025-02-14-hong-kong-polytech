@@ -1,0 +1,10 @@
+## Jerry Gilmore 1940-2023
+
+:::: {.columns}
+::: {.column width=60%}
+>If it was fun, they wouldn't have to pay you to do it.
+:::
+::: {.column width=40%}
+![](include/img/gilmore-jerry.png)
+:::
+::::

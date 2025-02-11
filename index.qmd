@@ -26,42 +26,28 @@ bibliographystyle: apa
 
 @NYU_Health_Sciences_Library2013-gp
 
-# Reflections
-
 ## Why is this so funny?
 
 ## Why is it *not* so funny?
+
+## Known flaws
+
+![@Munafo2017-dc](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp)
 
 ## @Begley2012-cr
 
 ::: {.incremental}
 - "...Scientists in the haematology and oncology department at the biotechnology firm Amgen...tried to confirm published findings...[from] fifty-three...'landmark' studies..."
 - "...findings were confirmed in only 6 (11%) cases."
-- Even knowing the limitations of preclinical research, this was a shocking result.
+- "Even knowing the limitations of preclinical research, this was a shocking result."
 - "Raise standards for clinical research"
 :::
 
-## @Errington2021-dp
-
->We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers...However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers.
-
-## @Errington2021-dp
-
-::: {.incremental}
-- "...data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original
-papers, we were unable to obtain these data for 68% of the experiments." 
-- "None of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments." **Fifty percent of authors** were minimally or not at all helpful."
-:::
-
-## @Errington2021-dp
-
-- "67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented."
-
-::: {.incremental}
-- This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible."
-:::
-
 ---
+
+{{< include _errington-bootcamp-2023.qmd >}}
+
+## Mixed views of science growing...
 
 ![% of U.S. adults who said science has had a(n) ___ effect on society](https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-01.png){#fig-sci-positive-effect}
 ---
@@ -69,24 +55,39 @@ papers, we were unable to obtain these data for 68% of the experiments."
 ![% of U.S. adults who say...](https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-04.png){#fig-sci-worthwhile-for-society}
 <https://www.pewresearch.org/science/2023/11/14/americans-trust-in-scientists-positive-views-of-science-continue-to-decline/>
 
-
-## What does it convey?
-
-::: {.incremental}
-- We can do better
-- Much, much better
-- So, let's do that
-:::
-
 # A better approach
 
 ## Openness
 
 - Share data, code, materials, & protocols
   - Openly (no prior approval or mandated collaboration)
-  - With explicit permission, formal data use agreements
+  - With explicit permission + formal data use agreements
 - Publish replications and null findings
 - Re-use and cite what others have shared
+- Accelerate discovery, but **get it right**
+
+## @Merton1973-vf
+
+:::: {.columns}
+::: {.column width=60%}
+![](include/img/mertonian-norms.jpg)
+:::
+::: {.column width=40%}
+![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
+:::
+::::
+
+## @Merton1973-vf
+
+:::: {.columns}
+::: {.column width=60%}
+- "The mores of science possess a methodologic rationale"
+- They are "procedurally efficent"
+:::
+::: {.column width=40%}
+![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
+:::
+::::
 
 ## @Nosek2012-fm
 
@@ -116,37 +117,34 @@ papers, we were unable to obtain these data for 68% of the experiments."
 
 {{< include _feynmann.qmd >}}
 
----
-
-## Scientific norms
-
-
-
-# A personal perspective
-
-## Optic flow
-
-## Symmetry
-
-## Sex differences
-
-## PLAY
-
-## Databrary
-
----
-
 # Challenges
+
+---
+
+![@Houtkoop2018-tl Figure 2](include/img/houtkoop-etal-2018-fig02.jpeg){.lightbox}
 
 ## Busy-ness
 
+---
+
 ![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
 
-## @Fitts1954-we Law 
+---
 
-- *Very* hard to be fast AND accurate
+![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
 
+## @Fitts1954-we 
+
+:::: {.columns}
+::: {.column width=60%}
+- Speed/accuracy trade-off
+- Hard to be fast AND accurate
+:::
+::: {.column width=40%}
 ![@Manohar2015-sn Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg)
+:::
+::::
+
 ---
 
 ![](https://kk.org/thetechnium/files/2024/01/AITradeoff.jpg){fig-align="center"}
@@ -154,6 +152,17 @@ papers, we were unable to obtain these data for 68% of the experiments."
 ---
 
 ![@Kahneman2013-zi](https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&ssl=1)
+
+## Fear
+
+---
+
+![@Houtkoop2018-tl Figure 3a](include/img/houtkoop-etal-2018-fig03-a.png)
+
+---
+
+![@Houtkoop2018-tl Figure 3b](include/img/houtkoop-etal-2018-fig03-b.png)
+
 
 ## @Twain1997-hz
 
@@ -166,7 +175,373 @@ papers, we were unable to obtain these data for 68% of the experiments."
 :::
 ::::
 
+## If you have nothing to hide, hide nothing
+
+![](include/img/cuban-mark-hide-nothing.png){fig-align="center"}
+
+---
+
 {{< include _toothbrush-culture-mishel.qmd >}}
+
+# A personal perspective
+
+---
+
+![@Qian2022-yp](include/img/qian-berenbaum-gilmore.png){figure-align="center"}
+
+---
+
+## Motivation
+
+::: {.incremental}
+- Sex^["What sex you were assigned at birth?"] differences ($M>F$) in vision [@Shaqiri2018-ys]: especially contrast sensitivity [@Abramov2012-da], motion sensitivity [@Murray2018-vn; @Qian2021-eu].
+- Sex differences spatial cognition (e.g., mental rotation) and activity choices.
+- Do these replicate?
+- Do they relate to one another?
+:::
+
+---
+
+![Vision tasks used in Qian et al. 2022](include/img/qian-berenbaum-gilmore-tasks.png){fig-align="center"}
+
+---
+
+![Mental rotation task](include/img/mental-rotation-task.png){fig-align="center"}
+
+---
+
+![Hobbies task](include/img/hobbies.png){fig-align="center"}
+
+
+---
+
+![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-01-boxplots-new.jpg){fig-align="center"}
+
+---
+
+![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-02-mental-rot-vision-new.jpg){fig-align="center"}
+
+---
+
+![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-03-contrast-motion.jpg){fig-align="center"}
+
+---
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S1-vocab.jpg){fig-align="center"}
+
+:::
+
+::: {.column width=50%}
+
+![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S2-contrast-interests.jpg){fig-align="center"}
+
+:::
+
+::::
+
+---
+
+## Lessons learned
+
+::: {.incremental}
+
+- Replications are good
+    - And sadly uncommon
+    - Bigger (combined) samples $\rightarrow$ higher power to detect smaller effects
+    - Don't we want to know the distribution of effect sizes | manipulations X, Y, Z?
+
+:::
+
+## Lessons learned
+
+::: {.incremental}
+- Data sharing is good
+    - Didn't ask original authors for data, but shouldn't have to.
+    - Most authors don't share even when asked [@Watson2022-ox; @Gabelica2022-nt; @Tedersoo2021-ad; @Vanpaemel2015-zr; @Wicherts2006-de] **even by a journal editor!** [@Miyakawa2020-wu].
+:::
+
+## Lessons learned
+
+::: {.incremental}
+- Preregistration helps draw bright line between *confirmatory* and *exploratory* analyses
+    - Hard, but useful discipline
+    - Included several post-registration exploratory analyses, including one suggested by reviewer.
+    - "Causal" analysis: Vision better predictor of mental rotation scores than sex.
+:::
+
+## Lessons learned
+
+- [Power *curve* analyses](https://gilmore-lab.github.io/sex-differences-project/analysis/preregistration/preregistration_power_analysis.html) (different $n$'s, effect sizes) especially informative and useful.
+
+---
+
+![Power analysis curves from [@Qian2022-yp]](include/img/qian-berenbaum-gilmore-power-plot.png){fig-align="center"}
+    
+## Lessons learned
+    
+- We need bigger samples...
+    
+>...Assuming a realistic range of prior probabilities for null hypotheses, **false report probability is likely to exceed 50% for the whole (psychology and cognitive neuroscience) literature**. [@Szucs2017-fc]
+
+## Lessons learned
+
+::: {.incremental}
+- Internally reproducible workflows
+    - Bolster confidence ("don't fool yourself")
+    - Easier to share with collaborators, the world
+    - Always in a "share-able" form
+    - Especially scriptable figures!
+:::
+
+## {background-iframe="https://gilmore-lab.github.io/sex-differences-project/analysis/qian-berenbaum-gilmore.html"}
+
+---
+
+![<https://github.com/gilmore-lab/sex-differences-project>](include/img/sex-diffs-project-github.png){fig-align="center"}
+
+---
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+![](https://d33wubrfki0l68.cloudfront.net/744922f70a84c7100803bb5985d362120e3d2f14/bf5ac/blog/quarto-rmarkdown-comparison/featured.png){fig-align="center" width=400px}
+
+- Words + Images + Videos + Code + Figures $\rightarrow$ web pages, .pptx, PDF, .docx, etc.
+- Gilmore & Valcin talk at the [Open Science Bootcamp 2023](https://penn-state-open-science.github.io/bootcamp-2023-rmarkdown-quarto/).
+
+:::
+
+::: {.column width=50%}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/663px-Jupyter_logo.svg.png){fig-align="center" width=200px}
+
+- Mike Burnham's workshop at the [Open Science Bootcamp 2023](https://penn-state-open-science.github.io/bootcamp-2023/day_2.html#day_2_pm_session_4).
+
+:::
+
+::::
+
+## Lessons learned
+
+- Plot (all of) your data
+- And save the plots, so you can use them later
+
+---
+
+::: {.columns}
+
+
+::: {.column width=50%}
+**Contrast Task**
+
+![](include/img/336-contrast-staircase.png)
+
+:::
+
+::: {.column width=50%}
+**Motion Task**
+
+![](include/img/336-motion-staircase.png)
+
+:::
+
+::::
+
+---
+
+::: {.columns}
+
+
+::: {.column width=50%}
+**Contrast Task**
+
+![](include/img/350-contrast-staircase.png)
+
+:::
+
+::: {.column width=50%}
+**Motion Task**
+
+![](include/img/350-motion-staircase.png)
+
+:::
+
+::::
+
+---
+
+::: {.columns}
+
+
+::: {.column width=50%}
+**Contrast Task**
+
+![](include/img/393-contrast-staircase.png)
+
+:::
+
+::: {.column width=50%}
+**Motion Task**
+
+![](include/img/393-motion-staircase.png)
+
+:::
+
+::::
+
+## Lessons learned
+
+::: {.incremental}
+- Working collaboratively "in the open" is hard
+- Open science practices take time and effort
+- Quick (& dirty) is, well...
+- Pay now (incrementally) or pay (a lot) later...
+:::
+
+---
+
+```{r fig-embed-defer, echo=FALSE, fig.cap="Embed curation & QA or defer it"}
+library(ggplot2)
+x1 <- c(1, 2, 3, 4, 5, 6)
+y1 <- c(0, 0, 0, 0, 0, 1)
+x2 <- c(1, 2, 3, 4, 5, 6)
+y2 <- c(0, .2, .4, .6, .8, 1)
+when <- c(rep("defer", 6), rep("embed", 6))
+
+data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
+  ggplot() +
+  aes(time, cum_work, color = timing) +
+  geom_point() +
+  geom_line() +
+  theme_classic() +
+  theme(legend.title = element_blank(), legend.position = "bottom")
+```
+
+## Opening the file drawer
+
+:::: {.columns}
+
+::: {.column width=40%}
+
+![Peter Kohler](include/img/kohler-peter.jpeg){fig-align="center" width="30%"}
+
+![Shivam Vedak](include/img/vedak-shivam.jpeg){fig-align="center" width="30%"}
+
+:::
+
+::: {.column width=60%}
+
+![](include/img/kohler-vedak-gilmore.png){fig-align="center"}
+
+<p style="text-align:center;">
+[@Kohler2022-ld; @Gilmore_undated-tc]
+</p>
+:::
+
+::::
+
+## Images and video are essential to the study of *behavior*
+
+---
+
+![[@GilmoreAdolph2017]](include/img/gilmore-adolph-nat-hum-beh-2017.png)
+
+## {data-background-video="https://www.anhourinthelife.org/img/PLAY-parents-noaudio.mp4"}
+
+## Play & Learning Across a Year (PLAY)
+
+::: {.incremental}
+
+- What do mothers and their infants actually **do** when they are together at home?
+- $n=$ 1,000 dyads
+- 30+ sites
+- 12, 18-, & 24-month-olds
+- 1 hr natural behavior; video home tour; video-recorded survey questionnaires
+- All openly shared on [Databrary.org](https://databrary.org)
+
+:::
+
+---
+
+![[@Soska2021-mh, Fig 3]](include/img/soska-2021-fig-3.png){fig-align="center"}
+
+---
+
+![[@Soska2021-mh, Fig 1]](include/img/soska-2021-fig-1.png){fig-align="center"}
+
+
+## {background-iframe="https://play-behaviorome.github.io/KoBoToolbox/"}
+
+---
+
+![Time series of PLAY recruiting calls](https://play-behaviorome.github.io/KoBoToolbox/include/img/unnamed-chunk-61-1.png){fig-align="center"}
+---
+
+![Distribution of prospective participant birthweights](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-birthwt-hist-1.png){fig-align="center"}
+
+---
+
+![Parent-reported child bedtime](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-bed-time-hist-1.png){fig-align="center"}
+---
+
+![Crawling onset](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-crawl-onset-hist-1.png){fig-align="center"}
+---
+
+![Comparing Adolph to WHO walk onset criteria](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-walk-mos-kea-who-1.png){fig-align="center"}
+
+---
+
+![Crawl onset vs. Walk onset](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-walk-mos-kea-crawl-mos-1.png){fig-align="center"}
+
+---
+
+![](include/img/databrary-nav-sm.jpg)
+
+---
+
+- Video + other identifiable/sensitive data
+- Share openly^[Don't need PIs' permission.], but not publicly, with restricted community of researchers^[Safer for data about people (even if de-identified).] who are [authorized](https://databrary.org/about/agreement.html) by their institutions.
+- Share with explicit [participant/parent permission](https://databrary.org/support/irb.html)
+    
+---
+
+- Scriptable (==reproducible) workflows via the Databrary API and the [*databraryr* package](https://github.com/databrary/databraryr/) 
+
+![](include/img/databraryr-logo.png){fig-align="center" width="25%"}
+
+- Python equivalent (*databrarypy*) in progress.
+
+---
+
+```{r echo=TRUE, eval=FALSE}
+databraryr::login_db(Sys.getenv("DATABRARY_LOGIN"))
+df <- databraryr::download_session_csv(vol_id = 4) |> 
+  readr::read_csv()
+xtabs(~ `participant-gender` + `participant-race`, df)
+```
+
+
+Download and open a video from Databrary: <https://nyu.databrary.org/volume/1/slot/9807/-?asset=1>
+
+```{r echo=TRUE, eval=FALSE}
+db_vid <- databraryr::download_asset()
+system(paste0("open ", db_vid))
+```
+
+## Lessons learned
+
+- Identifiable data *can* be shared
+    - With explicit permission
+    - With restricted access
+- Store once, access via APIs
+- Sustaining research infrastructure is thankless work
+
+## Thank you, Brian
 
 # Summing up
 
@@ -182,30 +557,11 @@ papers, we were unable to obtain these data for 68% of the experiments."
 
 ![Pantheon](https://theromanguy.com/wp-content/uploads/pantheon-feature-real-900x420.jpeg){fig-align="center"}
 
----
-
-![https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
-
----
-
-![](include/img/nobody-cares-work-harder.png){fig-align="center"}
-
-## Jerry Gilmore 1940-2023
-
-:::: {.columns}
-::: {.column width=60%}
->If it was fun, they wouldn't have to pay you to do it.
-:::
-::: {.column width=40%}
-![](include/img/gilmore-jerry.png)
-:::
-::::
-
 ## @Feynman1974-ld
 
 :::: {.columns}
 ::: {.column width=60%}
->...So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity. May you have that freedom.
+>...So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where **you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity**. May you have that freedom.
 :::
 ::: {.column width=40%}
 ![](https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg)
@@ -213,6 +569,25 @@ papers, we were unable to obtain these data for 68% of the experiments."
 ::::
 
 ---
+
+
+## If not now, when?
+
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&uniformYAxis=0&country=USA~GBR~CAN~DEU~ITA~IND&pickerSort=asc&pickerMetric=location&Metric=Cases+and+deaths&Interval=Cumulative&Relative+to+Population=true&Color+by+test+positivity=false&hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+<https://ourworldindata.org>
+
+---
+
+## {background-video="include/img/2021GISStempF-5yrAvg.webm"}
+
+## Rigorous, robust, reproducible science...
+
+::: {.incremental}
+- Has been essential to the improvement of human health and well-being in the past
+- Will be increasingly important to these improvements in the 21st century and beyond
+- Can be strengthened
+- And must be
+:::
 
 {{< include _yoda.qmd >}}
 
@@ -231,7 +606,9 @@ papers, we were unable to obtain these data for 68% of the experiments."
 
 ![https://www.aarp.org/politics-society/history/info-2018/rosie-riveter-dies-fd.html](https://cdn.aarp.net/content/aarpe/en/home/politics-society/history/info-2018/rosie-riveter-dies-fd/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.75.1440.jpeg/content/dam/aarp/politics/events-and-history/2017/04/1140-naomi-parker-fraley-rosie-the-riveter.jpg)
 
+---
 
+![](https://musictherapymoves.wordpress.com/wp-content/uploads/2011/11/thank-you-chinese.jpg)
 
 ## The past and future of science is open
 

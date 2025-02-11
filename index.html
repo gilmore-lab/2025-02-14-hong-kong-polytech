@@ -6,7 +6,10 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="index_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="index_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
   <meta name="author" content="Rick O. Gilmore">
@@ -28,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -169,11 +237,6 @@ Rick O. Gilmore
 
 <iframe data-external="1" src="https://www.youtube.com/embed/66oNv_DJuPc" width="100%" height="70%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <p><span class="citation" data-cites="NYU_Health_Sciences_Library2013-gp">NYU Health Sciences Library (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p>
-</section></section>
-<section>
-<section id="reflections" class="title-slide slide level1 center">
-<h1>Reflections</h1>
-
 </section>
 <section id="why-is-this-so-funny" class="slide level2">
 <h2>Why is this so funny?</h2>
@@ -181,45 +244,106 @@ Rick O. Gilmore
 <section id="why-is-it-not-so-funny" class="slide level2">
 <h2>Why is it <em>not</em> so funny?</h2>
 </section>
+<section id="known-flaws" class="slide level2">
+<h2>Known flaws</h2>
+
+<img data-src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Munafo2017-dc">Munafò et al. (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span></p></section>
 <section id="begley2012-cr" class="slide level2">
 <h2><span class="citation" data-cites="Begley2012-cr">Begley and Ellis (<a href="#/references" role="doc-biblioref" onclick="">2012</a>)</span></h2>
 <div>
 <ul>
 <li class="fragment">“…Scientists in the haematology and oncology department at the biotechnology firm Amgen…tried to confirm published findings…[from] fifty-three…‘landmark’ studies…”</li>
 <li class="fragment">“…findings were confirmed in only 6 (11%) cases.”</li>
-<li class="fragment">Even knowing the limitations of preclinical research, this was a shocking result.</li>
+<li class="fragment">“Even knowing the limitations of preclinical research, this was a shocking result.”</li>
 <li class="fragment">“Raise standards for clinical research”</li>
-</ul>
-</div>
-</section>
-<section id="errington2021-dp" class="slide level2">
-<h2><span class="citation" data-cites="Errington2021-dp">Errington et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></h2>
-<blockquote>
-<p>We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers…However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers.</p>
-</blockquote>
-</section>
-<section id="errington2021-dp-1" class="slide level2">
-<h2><span class="citation" data-cites="Errington2021-dp">Errington et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></h2>
-<div>
-<ul>
-<li class="fragment">“…data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original papers, we were unable to obtain these data for 68% of the experiments.”</li>
-<li class="fragment">“None of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments.” <strong>Fifty percent of authors</strong> were minimally or not at all helpful.”</li>
-</ul>
-</div>
-</section>
-<section id="errington2021-dp-2" class="slide level2">
-<h2><span class="citation" data-cites="Errington2021-dp">Errington et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></h2>
-<ul>
-<li>“67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented.”</li>
-</ul>
-<div>
-<ul>
-<li class="fragment">This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible.”</li>
 </ul>
 </div>
 </section>
 <section class="slide level2">
 
+
+<img data-src="include/img/reproducibility-project-cancer-biology.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.cos.io/rpcb">Reproducibility Project: Cancer Biology</a></p></section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/errington-bootcamp-2023.jpg"></p>
+<figcaption>Tim Errington, Center for Open Science at the <a href="https://penn-state-open-science/bootcamp-2023">Open Science Bootcamp 2023</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>…The initial aim of the project was to repeat 193 experiments from 53 high-impact papers…However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers…</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Errington2021-dp">(<a href="#/references" role="doc-biblioref" onclick="">Errington et al. 2021</a>)</span>
+</p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/errington-bootcamp-2023.jpg"></p>
+<figcaption>Tim Errington, Center for Open Science at the <a href="https://penn-state-open-science/bootcamp-2023">Open Science Bootcamp 2023</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>…the <strong>data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments</strong>…<strong>none of the 193 experiments were described in sufficient detail</strong> in the original paper to enable us to design protocols to repeat the experiments…</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Errington2021-dp">(<a href="#/references" role="doc-biblioref" onclick="">Errington et al. 2021</a>)</span>
+</p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/errington-bootcamp-2023.jpg"></p>
+<figcaption>Tim Errington, Center for Open Science at the <a href="https://penn-state-open-science/bootcamp-2023">Open Science Bootcamp 2023</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>…While authors were extremely or very helpful for 41% of experiments, <strong>they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments</strong>…</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Errington2021-dp">(<a href="#/references" role="doc-biblioref" onclick="">Errington et al. 2021</a>)</span>
+</p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/errington-bootcamp-2023.jpg"></p>
+<figcaption>Tim Errington, Center for Open Science at the <a href="https://penn-state-open-science/bootcamp-2023">Open Science Bootcamp 2023</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<blockquote>
+<p>…This experience draws attention to a basic and fundamental concern about replication – <strong>it is hard to assess whether reported findings are credible</strong>.</p>
+</blockquote>
+<p style="text-align:center;">
+<span class="citation" data-cites="Errington2021-dp">(<a href="#/references" role="doc-biblioref" onclick="">Errington et al. 2021</a>)</span>
+</p>
+</div></div>
+</section>
+<section id="what-the-actual-f-test" class="slide level2">
+<h2>What the <em>actual</em> <em>F</em>-test??!</h2>
+</section>
+<section id="mixed-views-of-science-growing" class="slide level2">
+<h2>Mixed views of science growing…</h2>
 
 <img data-src="https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-01.png" class="r-stretch quarto-figure-center" id="fig-sci-positive-effect"><p class="caption">
 Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on society
@@ -227,16 +351,6 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 <section class="slide level2">
 
 <p><img data-src="https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-04.png" id="fig-sci-worthwhile-for-society" alt="% of U.S. adults who say…"> <a href="https://www.pewresearch.org/science/2023/11/14/americans-trust-in-scientists-positive-views-of-science-continue-to-decline/" class="uri">https://www.pewresearch.org/science/2023/11/14/americans-trust-in-scientists-positive-views-of-science-continue-to-decline/</a></p>
-</section>
-<section id="what-does-it-convey" class="slide level2">
-<h2>What does it convey?</h2>
-<div>
-<ul>
-<li class="fragment">We can do better</li>
-<li class="fragment">Much, much better</li>
-<li class="fragment">So, let’s do that</li>
-</ul>
-</div>
 </section></section>
 <section>
 <section id="a-better-approach" class="title-slide slide level1 center">
@@ -249,11 +363,33 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 <li>Share data, code, materials, &amp; protocols
 <ul>
 <li>Openly (no prior approval or mandated collaboration)</li>
-<li>With explicit permission, formal data use agreements</li>
+<li>With explicit permission + formal data use agreements</li>
 </ul></li>
 <li>Publish replications and null findings</li>
 <li>Re-use and cite what others have shared</li>
+<li>Accelerate discovery, but <strong>get it right</strong></li>
 </ul>
+</section>
+<section id="merton1973-vf" class="slide level2">
+<h2><span class="citation" data-cites="Merton1973-vf">Merton (<a href="#/references" role="doc-biblioref" onclick="">1973</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="include/img/mertonian-norms.jpg"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg"></p>
+</div></div>
+</section>
+<section id="merton1973-vf-1" class="slide level2">
+<h2><span class="citation" data-cites="Merton1973-vf">Merton (<a href="#/references" role="doc-biblioref" onclick="">1973</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>“The mores of science possess a methodologic rationale”</li>
+<li>They are “procedurally efficent”</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg"></p>
+</div></div>
 </section>
 <section id="nosek2012-fm" class="slide level2">
 <h2><span class="citation" data-cites="Nosek2012-fm">Nosek, Spies, and Motyl (<a href="#/references" role="doc-biblioref" onclick="">2012</a>)</span></h2>
@@ -328,49 +464,49 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 </div>
 </div>
 </div></div>
-</section>
-<section id="scientific-norms" class="slide level2">
-<h2>Scientific norms</h2>
-</section></section>
-<section>
-<section id="a-personal-perspective" class="title-slide slide level1 center">
-<h1>A personal perspective</h1>
-
-</section>
-<section id="optic-flow" class="slide level2">
-<h2>Optic flow</h2>
-</section>
-<section id="symmetry" class="slide level2">
-<h2>Symmetry</h2>
-</section>
-<section id="sex-differences" class="slide level2">
-<h2>Sex differences</h2>
-</section>
-<section id="play" class="slide level2">
-<h2>PLAY</h2>
-</section>
-<section id="databrary" class="slide level2">
-<h2>Databrary</h2>
-</section>
-<section class="slide level2">
-
 </section></section>
 <section>
 <section id="challenges" class="title-slide slide level1 center">
 <h1>Challenges</h1>
 
 </section>
+<section class="slide level2">
+
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="include/img/houtkoop-etal-2018-fig02.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="@Houtkoop2018-tl Figure 2"><img data-src="include/img/houtkoop-etal-2018-fig02.jpeg" alt="Houtkoop et al. (2018) Figure 2"></a></p>
+<figcaption><span class="citation" data-cites="Houtkoop2018-tl">Houtkoop et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> Figure 2</figcaption>
+</figure>
+</div>
+</section>
 <section id="busy-ness" class="slide level2">
 <h2>Busy-ness</h2>
+</section>
+<section class="slide level2">
+
 
 <img data-src="https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg" class="r-stretch quarto-figure-center"><p class="caption">https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/</p></section>
-<section id="fitts1954-we-law" class="slide level2">
-<h2><span class="citation" data-cites="Fitts1954-we">Fitts (<a href="#/references" role="doc-biblioref" onclick="">1954</a>)</span> Law</h2>
-<ul>
-<li><em>Very</em> hard to be fast AND accurate</li>
-</ul>
+<section class="slide level2">
 
-<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Manohar2015-sn">Manohar et al. (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span> Figure 1</p></section>
+
+<img data-src="include/img/tenopir-2000-fig-xx.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Tenopir2020-mq">Tenopir et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p></section>
+<section id="fitts1954-we" class="slide level2">
+<h2><span class="citation" data-cites="Fitts1954-we">Fitts (<a href="#/references" role="doc-biblioref" onclick="">1954</a>)</span></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li>Speed/accuracy trade-off</li>
+<li>Hard to be fast AND accurate</li>
+</ul>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg"></p>
+<figcaption><span class="citation" data-cites="Manohar2015-sn">Manohar et al. (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span> Figure 1</figcaption>
+</figure>
+</div>
+</div></div>
+</section>
 <section class="slide level2">
 
 
@@ -379,6 +515,17 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 
 
 <img data-src="https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&amp;ssl=1" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Kahneman2013-zi">Kahneman (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></p></section>
+<section id="fear" class="slide level2">
+<h2>Fear</h2>
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/houtkoop-etal-2018-fig03-a.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Houtkoop2018-tl">Houtkoop et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> Figure 3a</p></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/houtkoop-etal-2018-fig03-b.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Houtkoop2018-tl">Houtkoop et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> Figure 3b</p></section>
 <section id="twain1997-hz" class="slide level2">
 <h2><span class="citation" data-cites="Twain1997-hz">Twain (<a href="#/references" role="doc-biblioref" onclick="">1997</a>)</span></h2>
 <div class="columns">
@@ -390,6 +537,10 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 <p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/330px-Mark_Twain_by_AF_Bradley.jpg"></p>
 </div></div>
 </section>
+<section id="if-you-have-nothing-to-hide-hide-nothing" class="slide level2">
+<h2>If you have nothing to hide, hide nothing</h2>
+
+<img data-src="include/img/cuban-mark-hide-nothing.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="toothbrush-culture" class="slide level2">
 <h2>Toothbrush culture</h2>
 
@@ -417,6 +568,364 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 </div></div>
 </section></section>
 <section>
+<section id="a-personal-perspective" class="title-slide slide level1 center">
+<h1>A personal perspective</h1>
+
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/qian-berenbaum-gilmore.png" data-figure-align="center" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></p></section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<div>
+<ul>
+<li class="fragment">Sex<sup>1</sup> differences (<span class="math inline">\(M&gt;F\)</span>) in vision <span class="citation" data-cites="Shaqiri2018-ys">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Shaqiri2018-ys?</strong></a>)</span>: especially contrast sensitivity <span class="citation" data-cites="Abramov2012-da">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Abramov2012-da?</strong></a>)</span>, motion sensitivity <span class="citation" data-cites="Murray2018-vn Qian2021-eu">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Murray2018-vn?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2021-eu?</strong></a>)</span>.</li>
+<li class="fragment">Sex differences spatial cognition (e.g., mental rotation) and activity choices.</li>
+<li class="fragment">Do these replicate?</li>
+<li class="fragment">Do they relate to one another?</li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>“What sex you were assigned at birth?”</p></li></ol></aside></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/qian-berenbaum-gilmore-tasks.png" class="r-stretch quarto-figure-center"><p class="caption">Vision tasks used in Qian et al.&nbsp;2022</p></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/mental-rotation-task.png" class="r-stretch quarto-figure-center"><p class="caption">Mental rotation task</p></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/hobbies.png" class="r-stretch quarto-figure-center"><p class="caption">Hobbies task</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-01-boxplots-new.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-02-mental-rot-vision-new.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-03-contrast-motion.jpg" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></p></section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S1-vocab.jpg"></p>
+<figcaption><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S2-contrast-interests.jpg"></p>
+<figcaption><span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></figcaption>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="lessons-learned" class="slide level2">
+<h2>Lessons learned</h2>
+<div>
+<ul>
+<li class="fragment">Replications are good
+<ul>
+<li class="fragment">And sadly uncommon</li>
+<li class="fragment">Bigger (combined) samples <span class="math inline">\(\rightarrow\)</span> higher power to detect smaller effects</li>
+<li class="fragment">Don’t we want to know the distribution of effect sizes | manipulations X, Y, Z?</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="lessons-learned-1" class="slide level2">
+<h2>Lessons learned</h2>
+<div>
+<ul>
+<li class="fragment">Data sharing is good
+<ul>
+<li class="fragment">Didn’t ask original authors for data, but shouldn’t have to.</li>
+<li class="fragment">Most authors don’t share even when asked <span class="citation" data-cites="Watson2022-ox Gabelica2022-nt Tedersoo2021-ad Vanpaemel2015-zr Wicherts2006-de">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Watson2022-ox?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Gabelica2022-nt?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Tedersoo2021-ad?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Vanpaemel2015-zr?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Wicherts2006-de?</strong></a>)</span> <strong>even by a journal editor!</strong> <span class="citation" data-cites="Miyakawa2020-wu">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Miyakawa2020-wu?</strong></a>)</span>.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="lessons-learned-2" class="slide level2">
+<h2>Lessons learned</h2>
+<div>
+<ul>
+<li class="fragment">Preregistration helps draw bright line between <em>confirmatory</em> and <em>exploratory</em> analyses
+<ul>
+<li class="fragment">Hard, but useful discipline</li>
+<li class="fragment">Included several post-registration exploratory analyses, including one suggested by reviewer.</li>
+<li class="fragment">“Causal” analysis: Vision better predictor of mental rotation scores than sex.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="lessons-learned-3" class="slide level2">
+<h2>Lessons learned</h2>
+<ul>
+<li><a href="https://gilmore-lab.github.io/sex-differences-project/analysis/preregistration/preregistration_power_analysis.html">Power <em>curve</em> analyses</a> (different <span class="math inline">\(n\)</span>’s, effect sizes) especially informative and useful.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/qian-berenbaum-gilmore-power-plot.png" class="r-stretch quarto-figure-center"><p class="caption">Power analysis curves from <span class="citation" data-cites="Qian2022-yp">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Qian2022-yp?</strong></a>)</span></p></section>
+<section id="lessons-learned-4" class="slide level2">
+<h2>Lessons learned</h2>
+<ul>
+<li>We need bigger samples…</li>
+</ul>
+<blockquote>
+<p>…Assuming a realistic range of prior probabilities for null hypotheses, <strong>false report probability is likely to exceed 50% for the whole (psychology and cognitive neuroscience) literature</strong>. <span class="citation" data-cites="Szucs2017-fc">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Szucs2017-fc?</strong></a>)</span></p>
+</blockquote>
+</section>
+<section id="lessons-learned-5" class="slide level2">
+<h2>Lessons learned</h2>
+<div>
+<ul>
+<li class="fragment">Internally reproducible workflows
+<ul>
+<li class="fragment">Bolster confidence (“don’t fool yourself”)</li>
+<li class="fragment">Easier to share with collaborators, the world</li>
+<li class="fragment">Always in a “share-able” form</li>
+<li class="fragment">Especially scriptable figures!</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="section" class="slide level2" data-background-iframe="https://gilmore-lab.github.io/sex-differences-project/analysis/qian-berenbaum-gilmore.html">
+<h2></h2>
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/sex-diffs-project-github.png" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/gilmore-lab/sex-differences-project" class="uri">https://github.com/gilmore-lab/sex-differences-project</a></p></section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://d33wubrfki0l68.cloudfront.net/744922f70a84c7100803bb5985d362120e3d2f14/bf5ac/blog/quarto-rmarkdown-comparison/featured.png" class="quarto-figure quarto-figure-center" width="400"></p>
+</figure>
+</div>
+<ul>
+<li>Words + Images + Videos + Code + Figures <span class="math inline">\(\rightarrow\)</span> web pages, .pptx, PDF, .docx, etc.</li>
+<li>Gilmore &amp; Valcin talk at the <a href="https://penn-state-open-science.github.io/bootcamp-2023-rmarkdown-quarto/">Open Science Bootcamp 2023</a>.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/663px-Jupyter_logo.svg.png" class="quarto-figure quarto-figure-center" width="200"></p>
+</figure>
+</div>
+<ul>
+<li>Mike Burnham’s workshop at the <a href="https://penn-state-open-science.github.io/bootcamp-2023/day_2.html#day_2_pm_session_4">Open Science Bootcamp 2023</a>.</li>
+</ul>
+</div></div>
+</section>
+<section id="lessons-learned-6" class="slide level2">
+<h2>Lessons learned</h2>
+<ul>
+<li>Plot (all of) your data</li>
+<li>And save the plots, so you can use them later</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Contrast Task</strong></p>
+<p><img data-src="include/img/336-contrast-staircase.png"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Motion Task</strong></p>
+<p><img data-src="include/img/336-motion-staircase.png"></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Contrast Task</strong></p>
+<p><img data-src="include/img/350-contrast-staircase.png"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Motion Task</strong></p>
+<p><img data-src="include/img/350-motion-staircase.png"></p>
+</div></div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Contrast Task</strong></p>
+<p><img data-src="include/img/393-contrast-staircase.png"></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Motion Task</strong></p>
+<p><img data-src="include/img/393-motion-staircase.png"></p>
+</div></div>
+</section>
+<section id="lessons-learned-7" class="slide level2">
+<h2>Lessons learned</h2>
+<div>
+<ul>
+<li class="fragment">Working collaboratively “in the open” is hard</li>
+<li class="fragment">Open science practices take time and effort</li>
+<li class="fragment">Quick (&amp; dirty) is, well…</li>
+<li class="fragment">Pay now (incrementally) or pay (a lot) later…</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="index_files/figure-revealjs/fig-embed-defer-1.png" width="960" class="r-stretch quarto-figure-center" id="fig-embed-defer"><p class="caption">
+Figure&nbsp;2: Embed curation &amp; QA or defer it
+</p></section>
+<section id="opening-the-file-drawer" class="slide level2">
+<h2>Opening the file drawer</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/kohler-peter.jpeg" style="width:30.0%"></p>
+<figcaption>Peter Kohler</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/vedak-shivam.jpeg" style="width:30.0%"></p>
+<figcaption>Shivam Vedak</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="include/img/kohler-vedak-gilmore.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+<p style="text-align:center;">
+<span class="citation" data-cites="Kohler2022-ld Gilmore_undated-tc">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Kohler2022-ld?</strong></a>; <a href="#/references" role="doc-biblioref" onclick=""><strong>Gilmore_undated-tc?</strong></a>)</span>
+</p>
+</div></div>
+</section>
+<section id="images-and-video-are-essential-to-the-study-of-behavior" class="slide level2">
+<h2>Images and video are essential to the study of <em>behavior</em></h2>
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/gilmore-adolph-nat-hum-beh-2017.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="GilmoreAdolph2017">(<a href="#/references" role="doc-biblioref" onclick=""><strong>GilmoreAdolph2017?</strong></a>)</span></p></section>
+<section id="section-1" class="slide level2" data-background-video="https://www.anhourinthelife.org/img/PLAY-parents-noaudio.mp4">
+<h2></h2>
+</section>
+<section id="play-learning-across-a-year-play" class="slide level2">
+<h2>Play &amp; Learning Across a Year (PLAY)</h2>
+<div>
+<ul>
+<li class="fragment">What do mothers and their infants actually <strong>do</strong> when they are together at home?</li>
+<li class="fragment"><span class="math inline">\(n=\)</span> 1,000 dyads</li>
+<li class="fragment">30+ sites</li>
+<li class="fragment">12, 18-, &amp; 24-month-olds</li>
+<li class="fragment">1 hr natural behavior; video home tour; video-recorded survey questionnaires</li>
+<li class="fragment">All openly shared on <a href="https://databrary.org">Databrary.org</a></li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+
+<img data-src="include/img/soska-2021-fig-3.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Soska2021-mh">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Soska2021-mh?</strong></a>, Fig 3)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/soska-2021-fig-1.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Soska2021-mh">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Soska2021-mh?</strong></a>, Fig 1)</span></p></section>
+<section id="section-2" class="slide level2" data-background-iframe="https://play-behaviorome.github.io/KoBoToolbox/">
+<h2></h2>
+</section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/unnamed-chunk-61-1.png" class="r-stretch quarto-figure-center"><p class="caption">Time series of PLAY recruiting calls</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-birthwt-hist-1.png" class="r-stretch quarto-figure-center"><p class="caption">Distribution of prospective participant birthweights</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-bed-time-hist-1.png" class="r-stretch quarto-figure-center"><p class="caption">Parent-reported child bedtime</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-crawl-onset-hist-1.png" class="r-stretch quarto-figure-center"><p class="caption">Crawling onset</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-walk-mos-kea-who-1.png" class="r-stretch quarto-figure-center"><p class="caption">Comparing Adolph to WHO walk onset criteria</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-walk-mos-kea-crawl-mos-1.png" class="r-stretch quarto-figure-center"><p class="caption">Crawl onset vs.&nbsp;Walk onset</p></section>
+<section class="slide level2">
+
+
+<img data-src="include/img/databrary-nav-sm.jpg" class="r-stretch"></section>
+<section class="slide level2">
+
+<ul>
+<li>Video + other identifiable/sensitive data</li>
+<li>Share openly<sup>1</sup>, but not publicly, with restricted community of researchers<sup>2</sup> who are <a href="https://databrary.org/about/agreement.html">authorized</a> by their institutions.</li>
+<li>Share with explicit <a href="https://databrary.org/support/irb.html">participant/parent permission</a></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Don’t need PIs’ permission.</p></li><li id="fn3"><p>Safer for data about people (even if de-identified).</p></li></ol></aside></section>
+<section class="slide level2">
+
+<ul>
+<li>Scriptable (==reproducible) workflows via the Databrary API and the <a href="https://github.com/databrary/databraryr/"><em>databraryr</em> package</a></li>
+</ul>
+
+<img data-src="include/img/databraryr-logo.png" class="quarto-figure quarto-figure-center r-stretch" style="width:25.0%"><ul>
+<li>Python equivalent (<em>databrarypy</em>) in progress.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a>databraryr<span class="sc">::</span><span class="fu">login_db</span>(<span class="fu">Sys.getenv</span>(<span class="st">"DATABRARY_LOGIN"</span>))</span>
+<span id="cb1-2"><a href=""></a>df <span class="ot">&lt;-</span> databraryr<span class="sc">::</span><span class="fu">download_session_csv</span>(<span class="at">vol_id =</span> <span class="dv">4</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb1-3"><a href=""></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>()</span>
+<span id="cb1-4"><a href=""></a><span class="fu">xtabs</span>(<span class="sc">~</span> <span class="st">`</span><span class="at">participant-gender</span><span class="st">`</span> <span class="sc">+</span> <span class="st">`</span><span class="at">participant-race</span><span class="st">`</span>, df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Download and open a video from Databrary: <a href="https://nyu.databrary.org/volume/1/slot/9807/-?asset=1" class="uri">https://nyu.databrary.org/volume/1/slot/9807/-?asset=1</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a>db_vid <span class="ot">&lt;-</span> databraryr<span class="sc">::</span><span class="fu">download_asset</span>()</span>
+<span id="cb2-2"><a href=""></a><span class="fu">system</span>(<span class="fu">paste0</span>(<span class="st">"open "</span>, db_vid))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="lessons-learned-8" class="slide level2">
+<h2>Lessons learned</h2>
+<ul>
+<li>Identifiable data <em>can</em> be shared
+<ul>
+<li>With explicit permission</li>
+<li>With restricted access</li>
+</ul></li>
+<li>Store once, access via APIs</li>
+<li>Sustaining research infrastructure is thankless work</li>
+</ul>
+</section>
+<section id="thank-you-brian" class="slide level2">
+<h2>Thank you, Brian</h2>
+</section></section>
+<section>
 <section id="summing-up" class="title-slide slide level1 center">
 <h1>Summing up</h1>
 
@@ -433,35 +942,36 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 
 
 <img data-src="https://theromanguy.com/wp-content/uploads/pantheon-feature-real-900x420.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Pantheon</p></section>
-<section class="slide level2">
-
-
-<img data-src="https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg" class="r-stretch quarto-figure-center"><p class="caption">https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg</p></section>
-<section class="slide level2">
-
-
-<img data-src="include/img/nobody-cares-work-harder.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="jerry-gilmore-1940-2023" class="slide level2">
-<h2>Jerry Gilmore 1940-2023</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<blockquote>
-<p>If it was fun, they wouldn’t have to pay you to do it.</p>
-</blockquote>
-</div><div class="column" style="width:40%;">
-<p><img data-src="include/img/gilmore-jerry.png"></p>
-</div></div>
-</section>
 <section id="feynman1974-ld-3" class="slide level2">
 <h2><span class="citation" data-cites="Feynman1974-ld">Feynman (<a href="#/references" role="doc-biblioref" onclick="">1974</a>)</span></h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <blockquote>
-<p>…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity. May you have that freedom.</p>
+<p>…So I have just one wish for you—the good luck to be somewhere where you are free to maintain the kind of integrity I have described, and where <strong>you do not feel forced by a need to maintain your position in the organization or financial support, or so on, to lose your integrity</strong>. May you have that freedom.</p>
 </blockquote>
 </div><div class="column" style="width:40%;">
 <p><img data-src="https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg"></p>
 </div></div>
+</section>
+<section id="if-not-now-when" class="slide level2">
+<h2>If not now, when?</h2>
+<iframe src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&amp;time=2020-03-01..latest&amp;uniformYAxis=0&amp;country=USA~GBR~CAN~DEU~ITA~IND&amp;pickerSort=asc&amp;pickerMetric=location&amp;Metric=Cases+and+deaths&amp;Interval=Cumulative&amp;Relative+to+Population=true&amp;Color+by+test+positivity=false&amp;hideControls=true" loading="lazy" style="width: 100%; height: 600px; border: 0px none;">
+</iframe>
+<p><a href="https://ourworldindata.org" class="uri">https://ourworldindata.org</a></p>
+</section>
+<section id="section-3" class="slide level2" data-background-video="include/img/2021GISStempF-5yrAvg.webm">
+<h2></h2>
+</section>
+<section id="rigorous-robust-reproducible-science" class="slide level2">
+<h2>Rigorous, robust, reproducible science…</h2>
+<div>
+<ul>
+<li class="fragment">Has been essential to the improvement of human health and well-being in the past</li>
+<li class="fragment">Will be increasingly important to these improvements in the 21st century and beyond</li>
+<li class="fragment">Can be strengthened</li>
+<li class="fragment">And must be</li>
+</ul>
+</div>
 </section>
 <section id="yoda" class="slide level2">
 <h2>Yoda</h2>
@@ -499,6 +1009,10 @@ Figure&nbsp;1: % of U.S. adults who said science has had a(n) ___ effect on soci
 
 
 <img data-src="https://cdn.aarp.net/content/aarpe/en/home/politics-society/history/info-2018/rosie-riveter-dies-fd/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.75.1440.jpeg/content/dam/aarp/politics/events-and-history/2017/04/1140-naomi-parker-fraley-rosie-the-riveter.jpg" class="r-stretch quarto-figure-center"><p class="caption">https://www.aarp.org/politics-society/history/info-2018/rosie-riveter-dies-fd.html</p></section>
+<section class="slide level2">
+
+
+<img data-src="https://musictherapymoves.wordpress.com/wp-content/uploads/2011/11/thank-you-chinese.jpg" class="r-stretch"></section>
 <section id="the-past-and-future-of-science-is-open" class="slide level2">
 <h2>The past and future of science is open</h2>
 <p style="text-align:center;">
@@ -530,6 +1044,9 @@ Feynman, R P. 1974. <span>“Cargo Cult Science.”</span> <a href="https://calt
 <div id="ref-Fitts1954-we" class="csl-entry" role="listitem">
 Fitts, P M. 1954. <span>“The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement.”</span> <em>Journal of Experimental Psychology</em> 47 (June): 381–91. <a href="https://doi.org/10.1037/h0055392">https://doi.org/10.1037/h0055392</a>.
 </div>
+<div id="ref-Houtkoop2018-tl" class="csl-entry" role="listitem">
+Houtkoop, Bobby Lee, Chris Chambers, Malcolm Macleod, Dorothy V M Bishop, Thomas E Nichols, and Eric-Jan Wagenmakers. 2018. <span>“Data Sharing in Psychology: A Survey on Barriers and Preconditions.”</span> <em>Advances in Methods and Practices in Psychological Science</em> 1 (March): 70–85. <a href="https://doi.org/10.1177/2515245917751886">https://doi.org/10.1177/2515245917751886</a>.
+</div>
 <div id="ref-Kahneman2013-zi" class="csl-entry" role="listitem">
 Kahneman, Daniel. 2013. <em>Thinking, Fast and Slow</em>. 1st edition. Farrar, Straus; Giroux. <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555">https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555</a>.
 </div>
@@ -539,8 +1056,14 @@ Manohar, Sanjay G, Trevor T-J Chong, Matthew A J Apps, Amit Batla, Maria Stamelo
 <div id="ref-McClain2025-cf" class="csl-entry" role="listitem">
 McClain, Dylan Loeb. 2025. <span>“Overlooked No More: Annie Easley, Who Helped Take Spaceflight to New Heights.”</span> <em>The New York Times</em>. The New York Times. <a href="https://www.nytimes.com/2025/02/01/obituaries/annie-easley-overlooked.html">https://www.nytimes.com/2025/02/01/obituaries/annie-easley-overlooked.html</a>.
 </div>
+<div id="ref-Merton1973-vf" class="csl-entry" role="listitem">
+Merton, Robert W. 1973. <span>“The Normative Structure of Science.”</span> In <em>The <span>S</span>ociology of <span>S</span>cience: <span>T</span>heoretical and <span>E</span>mpirical <span>I</span>nvestigations</em>, edited by Robert K Merton and Norman W Storer, 267–78. The University of Chicago Press.
+</div>
 <div id="ref-Mischel2011-br" class="csl-entry" role="listitem">
 Mischel, Walter. 2011. <span>“Becoming a Cumulative Science.”</span> <em>APS Observer</em> 22. <a href="https://www.psychologicalscience.org/observer/becoming-a-cumulative-science">https://www.psychologicalscience.org/observer/becoming-a-cumulative-science</a>.
+</div>
+<div id="ref-Munafo2017-dc" class="csl-entry" role="listitem">
+Munafò, Marcus R, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. 2017. <span>“A Manifesto for Reproducible Science.”</span> <em>Nature Human Behaviour</em> 1 (January): 0021. <a href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a>.
 </div>
 <div id="ref-Nosek2012-fm" class="csl-entry" role="listitem">
 Nosek, Brian A, Jeffrey R Spies, and Matt Motyl. 2012. <span>“Scientific Utopia <span>II</span>: Restructuring Incentives and Practices to Promote Truth over Publishability.”</span> <em>Perspectives on Psychological Science: A Journal of the Association for Psychological Science</em> 7 (November): 615–31. <a href="https://doi.org/10.1177/1745691612459058">https://doi.org/10.1177/1745691612459058</a>.
@@ -548,11 +1071,15 @@ Nosek, Brian A, Jeffrey R Spies, and Matt Motyl. 2012. <span>“Scientific Utopi
 <div id="ref-NYU_Health_Sciences_Library2013-gp" class="csl-entry" role="listitem">
 NYU Health Sciences Library. 2013. <em>Data Sharing and Management Snafu in 3 Short Acts (Higher Quality)</em>. Youtube. <a href="https://www.youtube.com/watch?v=66oNv_DJuPc">https://www.youtube.com/watch?v=66oNv_DJuPc</a>.
 </div>
+<div id="ref-Tenopir2020-mq" class="csl-entry" role="listitem">
+Tenopir, Carol, Natalie M Rice, Suzie Allard, Lynn Baird, Josh Borycz, Lisa Christian, Bruce Grant, Robert Olendorf, and Robert J Sandusky. 2020. <span>“Data Sharing, Management, Use, and Reuse: Practices and Perceptions of Scientists Worldwide.”</span> <em>PloS One</em> 15 (March): e0229003. <a href="https://doi.org/10.1371/journal.pone.0229003">https://doi.org/10.1371/journal.pone.0229003</a>.
+</div>
 <div id="ref-Twain1997-hz" class="csl-entry" role="listitem">
 Twain, Mark. 1997. <em>The Tragedy of <span>P</span>udd’nhead <span>W</span>ilson and the Comedy of Those Extraordinary Twins</em>. Oxford Mark Twain. New York, NY: Oxford University Press.
 </div>
 </div>
 </section></section>
+
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -998,6 +1525,38 @@ Twain, Mark. 1997. <em>The Tragedy of <span>P</span>udd’nhead <span>W</span>il
       }
     });
     </script>
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
