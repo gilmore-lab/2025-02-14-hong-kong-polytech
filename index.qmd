@@ -1,5 +1,6 @@
 ---
 title: "The past and future of science is open"
+subtitle: "The present is what we make it"
 author: "Rick O. Gilmore"
 format: 
   revealjs:
@@ -17,6 +18,16 @@ format:
 bibliography: 'include/bib/hk-polytech.bib'
 bibliographystyle: apa
 ---
+
+# Preliminaries
+
+---
+
+```{r echo=FALSE}
+plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
+```
+
+<https://gilmore-lab.github.io/hong-kong-polytech/>
 
 # Motivations
 
@@ -47,7 +58,7 @@ bibliographystyle: apa
 
 {{< include _errington-bootcamp-2023.qmd >}}
 
-## Mixed views of science growing...
+---
 
 ![% of U.S. adults who said science has had a(n) ___ effect on society](https://www.pewresearch.org/science/wp-content/uploads/sites/16/2023/11/PS_2023.11.14_trust-in-scientists_00-01.png){#fig-sci-positive-effect}
 ---
@@ -70,7 +81,10 @@ bibliographystyle: apa
 
 :::: {.columns}
 ::: {.column width=60%}
-![](include/img/mertonian-norms.jpg)
+- Communalism (common ownership)
+- Universalism (independent validity)
+- Disinterestedness (public not private benefit)
+- Organized skepticism (subject to critical scrutiny)
 :::
 ::: {.column width=40%}
 ![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
@@ -96,7 +110,7 @@ bibliographystyle: apa
 >When incentives favor novelty over replication, false results persist in the literature unchallenged, reducing efficiency in knowledge accumulation...
 :::
 ::: {.column width=50%}
-![](include/img/nosek-spies.avif)
+![](include/img/nosek-spies.png)
 
 :::
 ::::
@@ -109,7 +123,7 @@ bibliographystyle: apa
 >The persistence of false findings can be meliorated with strategies that make the fundamental but abstract accuracy motive--**getting it right**--competitive with the more tangible and concrete incentive—getting it published.
 :::
 ::: {.column width=50%}
-![](include/img/nosek-spies.avif)
+![](include/img/nosek-spies.png)
 :::
 ::::
 
@@ -215,15 +229,15 @@ bibliographystyle: apa
 
 ---
 
-![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-01-boxplots-new.jpg){fig-align="center"}
+![@Qian2022-yp](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-01-boxplots-new.jpg){fig-align="center"}
 
 ---
 
-![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-02-mental-rot-vision-new.jpg){fig-align="center"}
+![@Qian2022-yp](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-02-mental-rot-vision-new.jpg){fig-align="center"}
 
 ---
 
-![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-03-contrast-motion.jpg){fig-align="center"}
+![@Qian2022-yp](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-03-contrast-motion.jpg){fig-align="center"}
 
 ---
 
@@ -231,13 +245,13 @@ bibliographystyle: apa
 
 ::: {.column width=50%}
 
-![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S1-vocab.jpg){fig-align="center"}
+![@Qian2022-yp](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S1-vocab.jpg){fig-align="center"}
 
 :::
 
 ::: {.column width=50%}
 
-![[@Qian2022-yp]](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S2-contrast-interests.jpg){fig-align="center"}
+![@Qian2022-yp](https://raw.githubusercontent.com/gilmore-lab/sex-differences-project/master/analysis/paper_figs/fig-S2-contrast-interests.jpg){fig-align="center"}
 
 :::
 
@@ -269,6 +283,7 @@ bibliographystyle: apa
 ::: {.incremental}
 - Preregistration helps draw bright line between *confirmatory* and *exploratory* analyses
     - Hard, but useful discipline
+    - "Don't fool yourself!" [@Feynman1974-ld]
     - Included several post-registration exploratory analyses, including one suggested by reviewer.
     - "Causal" analysis: Vision better predictor of mental rotation scores than sex.
 :::
@@ -279,7 +294,7 @@ bibliographystyle: apa
 
 ---
 
-![Power analysis curves from [@Qian2022-yp]](include/img/qian-berenbaum-gilmore-power-plot.png){fig-align="center"}
+![Power analysis curves from @Qian2022-yp](include/img/qian-berenbaum-gilmore-power-plot.png){fig-align="center"}
     
 ## Lessons learned
     
@@ -291,7 +306,7 @@ bibliographystyle: apa
 
 ::: {.incremental}
 - Internally reproducible workflows
-    - Bolster confidence ("don't fool yourself")
+    - Bolster confidence ("You are the easiest one to fool", [@Feynman1974-ld])
     - Easier to share with collaborators, the world
     - Always in a "share-able" form
     - Especially scriptable figures!
@@ -303,39 +318,34 @@ bibliographystyle: apa
 
 ![<https://github.com/gilmore-lab/sex-differences-project>](include/img/sex-diffs-project-github.png){fig-align="center"}
 
----
+## Lessons learned
 
-:::: {.columns}
-
-::: {.column width=50%}
-
-![](https://d33wubrfki0l68.cloudfront.net/744922f70a84c7100803bb5985d362120e3d2f14/bf5ac/blog/quarto-rmarkdown-comparison/featured.png){fig-align="center" width=400px}
-
-- Words + Images + Videos + Code + Figures $\rightarrow$ web pages, .pptx, PDF, .docx, etc.
-- Gilmore & Valcin talk at the [Open Science Bootcamp 2023](https://penn-state-open-science.github.io/bootcamp-2023-rmarkdown-quarto/).
-
-:::
-
-::: {.column width=50%}
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/663px-Jupyter_logo.svg.png){fig-align="center" width=200px}
-
-- Mike Burnham's workshop at the [Open Science Bootcamp 2023](https://penn-state-open-science.github.io/bootcamp-2023/day_2.html#day_2_pm_session_4).
-
-:::
-
-::::
+![https://quarto.org](include/img/quarto.png)
 
 ## Lessons learned
 
-- Plot (all of) your data
+:::: {.columns}
+::: {.column width=50%}
+- "Plot your data!"
 - And save the plots, so you can use them later
+:::
+::: {.column width=50%}
+![Gilmore's graduate statistics professor](include/img/mike-meyer-linked-in.png)
+:::
+::::
 
 ---
 
-::: {.columns}
+![@datasaurus2019-us; @Matejka2017-xi](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif)
+
+---
+
+![@datasaurus2019-us; @Matejka2017-xi](https://www.research.autodesk.com/app/uploads/2024/09/BoxViolinSmaller.gif)
 
 
+---
+
+:::: {.columns}
 ::: {.column width=50%}
 **Contrast Task**
 
@@ -354,16 +364,13 @@ bibliographystyle: apa
 
 ---
 
-::: {.columns}
-
-
+:::: {.columns}
 ::: {.column width=50%}
 **Contrast Task**
 
 ![](include/img/350-contrast-staircase.png)
 
 :::
-
 ::: {.column width=50%}
 **Motion Task**
 
@@ -375,23 +382,19 @@ bibliographystyle: apa
 
 ---
 
-::: {.columns}
-
-
+:::: {.columns}
 ::: {.column width=50%}
 **Contrast Task**
 
 ![](include/img/393-contrast-staircase.png)
 
 :::
-
 ::: {.column width=50%}
 **Motion Task**
 
 ![](include/img/393-motion-staircase.png)
 
 :::
-
 ::::
 
 ## Lessons learned
@@ -449,9 +452,11 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 
 ---
 
-![[@GilmoreAdolph2017]](include/img/gilmore-adolph-nat-hum-beh-2017.png)
+![[@Gilmore2017-wd]](include/img/gilmore-adolph-nat-hum-beh-2017.png)
 
 ## {data-background-video="https://www.anhourinthelife.org/img/PLAY-parents-noaudio.mp4"}
+
+
 
 ## Play & Learning Across a Year (PLAY)
 
@@ -468,18 +473,22 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 
 ---
 
-![[@Soska2021-mh, Fig 3]](include/img/soska-2021-fig-3.png){fig-align="center"}
+![<https://play-project.org>](include/img/play-pis.png)
 
 ---
 
-![[@Soska2021-mh, Fig 1]](include/img/soska-2021-fig-1.png){fig-align="center"}
+![Figure 3 from @Soska2021-mh](include/img/soska-2021-fig-3.png){fig-align="center"}
+
+---
+
+![Figure 1 from @Soska2021-mh](include/img/soska-2021-fig-1.png){fig-align="center"}
 
 
 ## {background-iframe="https://play-behaviorome.github.io/KoBoToolbox/"}
 
 ---
 
-![Time series of PLAY recruiting calls](https://play-behaviorome.github.io/KoBoToolbox/include/img/unnamed-chunk-61-1.png){fig-align="center"}
+![Time series of visits](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/fig-home-visit-time-series-1.png){fig-align="center"}
 ---
 
 ![Distribution of prospective participant birthweights](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-birthwt-hist-1.png){fig-align="center"}
@@ -487,9 +496,6 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 ---
 
 ![Parent-reported child bedtime](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-bed-time-hist-1.png){fig-align="center"}
----
-
-![Crawling onset](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-crawl-onset-hist-1.png){fig-align="center"}
 ---
 
 ![Comparing Adolph to WHO walk onset criteria](https://play-behaviorome.github.io/KoBoToolbox/include/img/fig-walk-mos-kea-who-1.png){fig-align="center"}
@@ -500,8 +506,32 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 
 ---
 
-![](include/img/databrary-nav-sm.jpg)
+:::: {.columns}
+::: {.column width=50%}
+![Words 12-mo-olds know](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/12-eng-wordcloud-1.png)
+:::
+::: {.column width=50%}
+![Words 12-mo-olds know](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/18-eng-wordcloud-1.png)
+:::
+::::
 
+---
+
+![Who does the laundry?](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/fig-labor_laundry_combined-1.png)
+
+## Lessons learned
+
+::: {.incremental}
+- Continuous integration/continuous deployment (CI/CD)
+- Share full protocols, iterate on, improve upon
+- Elevate process to equal product
+- ~~Garbage in/Garbage out~~ $\rightarrow$ embed quality assurance
+- Need *much* better, richer, denser, more realistic, & widely shared data in psychological science
+:::
+
+---
+
+![](include/img/databrary-nav-sm.jpg)
 ---
 
 - Video + other identifiable/sensitive data
@@ -525,13 +555,25 @@ df <- databraryr::download_session_csv(vol_id = 4) |>
 xtabs(~ `participant-gender` + `participant-race`, df)
 ```
 
-
 Download and open a video from Databrary: <https://nyu.databrary.org/volume/1/slot/9807/-?asset=1>
 
 ```{r echo=TRUE, eval=FALSE}
 db_vid <- databraryr::download_asset()
 system(paste0("open ", db_vid))
 ```
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+![](https://databrary.github.io/analytics/weekly_files/figure-html/fig-databrary-inst-invest-timeseries-1.png)
+:::
+::: {.column width=50%}
+![](https://databrary.github.io/analytics/demographics_files/figure-html/under-5y-hist-1.png)
+:::
+::::
+
+<https://databrary.github.io/analytics>
 
 ## Lessons learned
 
@@ -542,6 +584,15 @@ system(paste0("open ", db_vid))
 - Sustaining research infrastructure is thankless work
 
 ## Thank you, Brian
+
+:::: {.columns}
+::: {.column width=50%}
+![<https://talkbank.org>](include/img/talkbank-org.png)
+:::
+::: {.column width=50%}
+![](https://www.cmu.edu/dietrich/psychology/images/directory/macwhinney1.jpg)
+:::
+::::
 
 # Summing up
 
