@@ -668,6 +668,8 @@ system(paste0("open ", db_vid))
 - And must be
 :::
 
+## {background-color="black"}
+
 {{< include _yoda.qmd >}}
 
 ## Annie Easley
