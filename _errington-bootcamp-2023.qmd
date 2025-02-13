@@ -16,7 +16,7 @@
 >...The initial aim of the project was to repeat 193 experiments from 53 high-impact papers...However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers...
 
 <p style="text-align:center;">
-[@Errington2021-dp]
+@Errington2021-dp
 </p>
 
 :::
@@ -38,7 +38,7 @@
 >...the **data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments**...**none of the 193 experiments were described in sufficient detail** in the original paper to enable us to design protocols to repeat the experiments...
 
 <p style="text-align:center;">
-[@Errington2021-dp]
+@Errington2021-dp
 </p>
 :::
 
@@ -59,7 +59,7 @@
 >...While authors were extremely or very helpful for 41% of experiments, **they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments**...
 
 <p style="text-align:center;">
-[@Errington2021-dp]
+@Errington2021-dp
 </p>
 
 :::
@@ -81,11 +81,13 @@
 >...This experience draws attention to a basic and fundamental concern about replication – **it is hard to assess whether reported findings are credible**.
 
 <p style="text-align:center;">
-[@Errington2021-dp]
+@Errington2021-dp
 </p>
 
 :::
 
 ::::
 
-## What the *actual* *F*-test??!
+---
+
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTh4ZDUxcnNoc3phZjZydWVwaXd1bmNoc3psZ3NlaTdvYjFoeG15OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KpSrCxhoZQWjJVVnrd/giphy.gif)

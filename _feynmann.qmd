@@ -6,7 +6,7 @@
 :::
 
 ::: {.column width="40%"}
-![Richard P. Feynman, Wikipedia](include/img/Richard_Feynman_Nobel.jpg){fig-height="20%"}
+![](include/img/Richard_Feynman_Nobel.jpg)
 :::
 :::
 
@@ -18,7 +18,7 @@
 :::
 
 ::: {.column width="40%"}
-![Richard P. Feynman, Wikipedia](include/img/Richard_Feynman_Nobel.jpg)
+![](include/img/Richard_Feynman_Nobel.jpg)
 :::
 :::
 
@@ -31,8 +31,6 @@
 :::
 
 ::: {.column width="40%"}
-```{r, fig.cap="Richard P. Feynman, Wikipedia"}
-knitr::include_graphics("https://upload.wikimedia.org/wikipedia/en/4/42/Richard_Feynman_Nobel.jpg")
-```
+![](include/img/Richard_Feynman_Nobel.jpg)
 :::
 :::

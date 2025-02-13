@@ -15,8 +15,11 @@ format:
     background-transition: concave
     fig-align: center
     multiplex: true
-bibliography: 'include/bib/hk-polytech.bib'
+bibliography: include/bib/hk-polytech.bib
 bibliographystyle: apa
+css: include/css/gilmore-revealjs.css
+params:
+  talk_url: "https://gilmore-lab.github.io/2025-02-14-hong-kong-polytech"
 ---
 
 # Preliminaries
@@ -24,10 +27,20 @@ bibliographystyle: apa
 ---
 
 ```{r echo=FALSE}
-plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
+plot(qrcode::qr_code(params$talk_url))
 ```
 
-<https://gilmore-lab.github.io/hong-kong-polytech/>
+<p style="text-align:center;">
+<https://gilmore-lab.github.io/2025-02-14-hong-kong-polytech/>
+</p>
+
+## Support
+
+- U.S. National Science Foundation
+- U.S. Eunice Kennedy Shriver National Institute of Child Health and Human Development, U.S. National Institutes of Health, U.S. National Institute of Mental Health
+- John S. Templeton Foundation
+- James S. McDonnell Foundation
+- Alfred P. Sloan Foundation
 
 # Motivations
 
@@ -35,24 +48,25 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 {{< video https://www.youtube.com/watch?v=66oNv_DJuPc width=100% height=70% >}}
 
+<p style="text-align:center;">
 @NYU_Health_Sciences_Library2013-gp
+</p>
 
-## Why is this so funny?
+## Why is this funny?
 
-## Why is it *not* so funny?
+## Why is it *not* funny?
 
-## Known flaws
+---
 
 ![@Munafo2017-dc](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg?as=webp)
 
 ## @Begley2012-cr
 
-::: {.incremental}
-- "...Scientists in the haematology and oncology department at the biotechnology firm Amgen...tried to confirm published findings...[from] fifty-three...'landmark' studies..."
-- "...findings were confirmed in only 6 (11%) cases."
-- "Even knowing the limitations of preclinical research, this was a shocking result."
-- "Raise standards for clinical research"
-:::
+>...Scientists in the haematology and oncology department at the biotechnology firm Amgen...tried to confirm published findings...[from] fifty-three...'landmark' studies.
+
+>...**findings were confirmed in only 6 (11%) cases**.
+
+>Even knowing the limitations of preclinical research, this was a shocking result.
 
 ---
 
@@ -70,21 +84,27 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 ## Openness
 
+::: {.incremental}
 - Share data, code, materials, & protocols
   - Openly (no prior approval or mandated collaboration)
-  - With explicit permission + formal data use agreements
-- Publish replications and null findings
+  - With explicit participant permission + formal data use agreements
+- Publish replications & null findings, complete protocols
 - Re-use and cite what others have shared
-- Accelerate discovery, but **get it right**
+- Prioritize getting it right
+:::
+
+## 
 
 ## @Merton1973-vf
 
 :::: {.columns}
 ::: {.column width=60%}
+::: {.incremental}
 - Communalism (common ownership)
 - Universalism (independent validity)
-- Disinterestedness (public not private benefit)
-- Organized skepticism (subject to critical scrutiny)
+- Disinterestedness (public benefit)
+- Organized skepticism (scrutinize everything)
+:::
 :::
 ::: {.column width=40%}
 ![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
@@ -95,8 +115,7 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 :::: {.columns}
 ::: {.column width=60%}
-- "The mores of science possess a methodologic rationale"
-- They are "procedurally efficent"
+>The mores of science possess a methodologic rationale...They are procedurally efficent...
 :::
 ::: {.column width=40%}
 ![](https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K_Merton.jpg)
@@ -137,8 +156,6 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 ![@Houtkoop2018-tl Figure 2](include/img/houtkoop-etal-2018-fig02.jpeg){.lightbox}
 
-## Busy-ness
-
 ---
 
 ![https://teacherhead.com/2017/02/27/reinventing-the-wheel-again/](https://headguruteacher.files.wordpress.com/2017/02/9464b325-d2f4-4604-8258-82093bf93af6.jpg)
@@ -147,15 +164,17 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 ![@Tenopir2020-mq](include/img/tenopir-2000-fig-xx.png)
 
-## @Fitts1954-we 
+## Trade-offs
 
 :::: {.columns}
-::: {.column width=60%}
-- Speed/accuracy trade-off
+::: {.column width=40%}
+::: {.incremental}
+- Speed vs. accuracy [@Fitts1954-we]
 - Hard to be fast AND accurate
 :::
-::: {.column width=40%}
-![@Manohar2015-sn Figure 1](https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg)
+:::
+::: {.column width=60%}
+![Figure 1 from @Manohar2015-sn](https://ars.els-cdn.com/content/image/1-s2.0-S0960982215006120-fx1.jpg)
 :::
 ::::
 
@@ -166,8 +185,6 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 ---
 
 ![@Kahneman2013-zi](https://i0.wp.com/www.raptisrarebooks.com/images/197526/thinking-fast-and-slow-daniel-kahneman-first-edition-signed-rare-books.jpg?fit=850%2C680&ssl=1)
-
-## Fear
 
 ---
 
@@ -207,8 +224,9 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 
 ## Motivation
 
-::: {.incremental}
 - Sex^["What sex you were assigned at birth?"] differences ($M>F$) in vision [@Shaqiri2018-ys]: especially contrast sensitivity [@Abramov2012-da], motion sensitivity [@Murray2018-vn; @Qian2021-eu].
+
+::: {.incremental}
 - Sex differences spatial cognition (e.g., mental rotation) and activity choices.
 - Do these replicate?
 - Do they relate to one another?
@@ -266,7 +284,7 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 - Replications are good
     - And sadly uncommon
     - Bigger (combined) samples $\rightarrow$ higher power to detect smaller effects
-    - Don't we want to know the distribution of effect sizes | manipulations X, Y, Z?
+    - What is the *true* distribution of effect sizes | manipulations X, Y, Z?
 
 :::
 
@@ -284,8 +302,8 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 - Preregistration helps draw bright line between *confirmatory* and *exploratory* analyses
     - Hard, but useful discipline
     - "Don't fool yourself!" [@Feynman1974-ld]
-    - Included several post-registration exploratory analyses, including one suggested by reviewer.
-    - "Causal" analysis: Vision better predictor of mental rotation scores than sex.
+    - Included several post-registration exploratory analyses, including one suggested by a reviewer
+    - "Causal" analysis: Vision better predictor of mental rotation scores than sex
 :::
 
 ## Lessons learned
@@ -305,8 +323,8 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 ## Lessons learned
 
 ::: {.incremental}
-- Internally reproducible workflows
-    - Bolster confidence ("You are the easiest one to fool", [@Feynman1974-ld])
+- Internally reproducible workflows...
+    - Bolster confidence ("You are the easiest one to fool.")
     - Easier to share with collaborators, the world
     - Always in a "share-able" form
     - Especially scriptable figures!
@@ -328,9 +346,10 @@ plot(qrcode::qr_code("https://gilmore-lab.github.io/hong-kong-polytech/"))
 ::: {.column width=50%}
 - "Plot your data!"
 - And save the plots, so you can use them later
+- Be kind to your future (forgetful) self
 :::
 ::: {.column width=50%}
-![Gilmore's graduate statistics professor](include/img/mike-meyer-linked-in.png)
+![Gilmore's graduate statistics professor at Carnegie Mellon](include/img/mike-meyer-linked-in.png)
 :::
 ::::
 
@@ -425,6 +444,8 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
   theme(legend.title = element_blank(), legend.position = "bottom")
 ```
 
+---
+
 ## Opening the file drawer
 
 :::: {.columns}
@@ -442,7 +463,7 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 ![](include/img/kohler-vedak-gilmore.png){fig-align="center"}
 
 <p style="text-align:center;">
-[@Kohler2022-ld; @Gilmore_undated-tc]
+@Kohler2022-ld; @Gilmore_undated-tc
 </p>
 :::
 
@@ -511,7 +532,7 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 ![Words 12-mo-olds know](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/12-eng-wordcloud-1.png)
 :::
 ::: {.column width=50%}
-![Words 12-mo-olds know](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/18-eng-wordcloud-1.png)
+![Words 18-mo-olds know](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/18-eng-wordcloud-1.png)
 :::
 ::::
 
@@ -523,9 +544,10 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 
 ::: {.incremental}
 - Continuous integration/continuous deployment (CI/CD)
-- Share full protocols, iterate on, improve upon
+- Share full protocols, improve upon, version
 - Elevate process to equal product
 - ~~Garbage in/Garbage out~~ $\rightarrow$ embed quality assurance
+
 - Need *much* better, richer, denser, more realistic, & widely shared data in psychological science
 :::
 
@@ -575,13 +597,19 @@ system(paste0("open ", db_vid))
 
 <https://databrary.github.io/analytics>
 
+---
+
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWRuNTcxMHZuNjA3cmI1dzV2c3dzenZtNnF0MTRoNXJkcDc0eGpsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fnDY3C9MKukcER71r7/giphy.gif){fig-align="center"}
+
 ## Lessons learned
 
-- Identifiable data *can* be shared
-    - With explicit permission
+::: {.incremental}
+- Identifiable data *can* be shared *ethically*
+    - With explicit participant permission
     - With restricted access
-- Store once, access via APIs
+- Store once in eventual 'home', access via APIs
 - Sustaining research infrastructure is thankless work
+:::
 
 ## Thank you, Brian
 
@@ -656,6 +684,28 @@ system(paste0("open ", db_vid))
 ---
 
 ![https://www.aarp.org/politics-society/history/info-2018/rosie-riveter-dies-fd.html](https://cdn.aarp.net/content/aarpe/en/home/politics-society/history/info-2018/rosie-riveter-dies-fd/_jcr_content/root/container_main/container_body_main/container_image/articlecontentfragme/cfimage.coreimg.75.1440.jpeg/content/dam/aarp/politics/events-and-history/2017/04/1140-naomi-parker-fraley-rosie-the-riveter.jpg)
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+>It does not matter how slowly you go so long as you do not stop
+:::
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/5/54/Confucius_Tang_Dynasty.jpg)
+:::
+::::
+
+---
+
+:::: {.columns}
+::: {.column width=50%}
+>Wherever you go, go with all your heart
+:::
+::: {.column width=50%}
+![](https://upload.wikimedia.org/wikipedia/commons/5/54/Confucius_Tang_Dynasty.jpg)
+:::
+::::
 
 ---
 
