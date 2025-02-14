@@ -1,14 +1,14 @@
 # 2025-02-14-hong-kong-polytech
 
 Talk Rick Gilmore gave on 2025-02-14 in a symposium on Open Science in Language 
-Research at Hong Kong Polytechnic University.
+Science at Hong Kong Polytechnic University.
 
 The slides are written in [Quarto](https://quarto.org) and rendered to HTML 
 using the RevealJS framework.
 
 To view the slide deck, visit 
 
-<https://gilmore-lab.github.io/2025-02-14-hong-kong-polytech>.
+<https://gilmore-lab.github.io/2025-02-14-hong-kong-polytech>
 
 To render the talk:
 

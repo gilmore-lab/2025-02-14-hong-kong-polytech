@@ -15,6 +15,7 @@ format:
     background-transition: concave
     fig-align: center
     multiplex: true
+    logo: include/img/databrary-new-leaf.jpg
 bibliography: include/bib/hk-polytech.bib
 bibliographystyle: apa
 css: include/css/gilmore-revealjs.css
