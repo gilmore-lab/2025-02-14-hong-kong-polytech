@@ -546,7 +546,10 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 ---
 
 ![](include/img/global-babies.png)
+<<<<<<< HEAD
 <https://global-babies.org>
+=======
+>>>>>>> 9dfc129a2543e83d2c160dfe05edb3dbbbddac5e
 
 ## Lessons learned
 
