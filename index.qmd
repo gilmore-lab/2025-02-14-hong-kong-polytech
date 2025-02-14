@@ -215,6 +215,10 @@ plot(qrcode::qr_code(params$talk_url))
 
 {{< include _toothbrush-culture-mishel.qmd >}}
 
+---
+
+![<https://149365049.v2.pressablecdn.com/wp-content/uploads/2014/07/6-blind-men-hans-1024x654.jpg>](https://149365049.v2.pressablecdn.com/wp-content/uploads/2014/07/6-blind-men-hans-1024x654.jpg){fig-align="center"}
+
 # A personal perspective
 
 ---
@@ -541,6 +545,10 @@ data.frame(time = c(x1, x2), cum_work = c(y1, y2), timing = when) |>
 
 ![Who does the laundry?](https://play-project.org/KoBoToolbox/home-visit-viz_files/figure-html/fig-labor_laundry_combined-1.png)
 
+---
+
+![](include/img/global-babies.png)
+
 ## Lessons learned
 
 ::: {.incremental}
@@ -577,6 +585,8 @@ df <- databraryr::download_session_csv(vol_id = 4) |>
   readr::read_csv()
 xtabs(~ `participant-gender` + `participant-race`, df)
 ```
+
+![](include/img/databrary-demog-vol-4.png)
 
 Download and open a video from Databrary: <https://nyu.databrary.org/volume/1/slot/9807/-?asset=1>
 
