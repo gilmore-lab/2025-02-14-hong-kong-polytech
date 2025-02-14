@@ -224,10 +224,10 @@ plot(qrcode::qr_code(params$talk_url))
 
 ## Motivation
 
-- Sex^["What sex you were assigned at birth?"] differences ($M>F$) in vision [@Shaqiri2018-ys]: especially contrast sensitivity [@Abramov2012-da], motion sensitivity [@Murray2018-vn; @Qian2021-eu].
+- Sex^["What sex you were assigned at birth?"] differences ($M>F$) in vision [@Shaqiri2018-ys]: especially contrast sensitivity [@Abramov2012-da], motion sensitivity [@Murray2018-vn; @Qian2021-wf].
 
 ::: {.incremental}
-- Sex differences spatial cognition (e.g., mental rotation) and activity choices.
+- Sex differences in spatial cognition (e.g., mental rotation) and activity choices.
 - Do these replicate?
 - Do they relate to one another?
 :::
